@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_delegate_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="@string/bottom_sort_value"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_divider_gray"
+        android:baselineAligned="true">
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/cfl_sort_list_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/cfl_sort_content_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</LinearLayout>

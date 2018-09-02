@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>测试web点击事件</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+<button id="test">测试事件</button>
+
+<script type="text/javascript">
+    function nativeCall(){
+        alert('原生调用js');
+    };
+
+    document.getElementById('test').onclick = function () {
+        var command = {
+            'action' : 'test'
+
+        };
+        dogger.event(JSON.stringify(command))
+    };
+
+</script>
+
+</body>
+</html>

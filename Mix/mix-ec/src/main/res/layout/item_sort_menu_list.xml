@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/we_chat_black"
+       />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_sort_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_divider_gray_dark" />
+
+</RelativeLayout>

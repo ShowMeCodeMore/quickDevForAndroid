@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_multiple"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/nick_name_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/avatar_multiple"
+        android:text="泡在网上的日子"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/pub_date_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nick_name_multiple"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/avatar_multiple"
+        android:text="21小时之前"
+        android:textSize="@dimen/sp_14"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/title_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar_multiple"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="泡在网上的日子"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/content_img_multiple"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/pannel_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_multiple"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="藏0  评0  赞0  阅100"
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/content_img_multiple"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:layout_centerVertical="true"
+         />
+
+</RelativeLayout>

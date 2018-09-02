@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_screen_lock_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text="@string/screen_lock_title"
+        />
+
+    <com.sa.all_cui.quick_lib.fix.screenlock.LockView
+        android:id="@+id/lock_view_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        app:lock_autoLink="true"
+        app:lock_enableVibrate="true"
+        app:lock_lineColor="@android:color/holo_blue_light"
+        app:lock_lineWidth="4dp"
+        app:lock_pointAreaExpand="24dp"
+        app:lock_pointLightSrc="@drawable/node_small_active"
+        app:lock_pointOnAnim="@anim/point_anim"
+        app:lock_pointSize="16dp"
+        app:lock_pointSrc="@drawable/node_small_normal"
+        app:lock_vibrateTime="20" />
+
+    <!--当手势密码输错三次的话，就显示重置手势密码的提示按钮-->
+    <TextView
+        android:id="@+id/tv_screen_lock_resetpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_divider_gray">#1111</color>
+    <color name="app_divider_gray_dark">#c9c9c9</color>
+    <color name="we_chat_black">#323232</color>
+    <color name="item_background">#F1F1F1</color>
+    <color name="app_main">@android:color/holo_orange_dark</color>
+    <color name="we_chat_green">#04b00f</color>
+    <color name="app_background">#55c9c9c9</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+</resources>

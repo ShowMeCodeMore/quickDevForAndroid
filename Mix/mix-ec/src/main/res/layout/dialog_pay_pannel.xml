@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:orientation="horizontal">
+       <!--支付宝-->
+       <com.joanzapata.iconify.widget.IconTextView
+           android:id="@+id/bt_pay_pannal_zifubao"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:text="{icon-ali-pay}"
+           android:textColor="@android:color/holo_blue_bright"
+           android:textSize="56sp"
+           tools:ignore="HardcodedText" />
+
+       <!--微信-->
+       <com.joanzapata.iconify.widget.IconTextView
+           android:id="@+id/bt_pay_pannal_wechat"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:text="{fa-weixin}"
+           android:textColor="@color/we_chat_green"
+           android:textSize="56sp"
+           tools:ignore="HardcodedText" />
+   </LinearLayout>
+    <!--取消支付-->
+    <Button
+        android:id="@+id/bt_pay_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/pay_cancel"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
