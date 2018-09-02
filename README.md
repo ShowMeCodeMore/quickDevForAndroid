@@ -1,0 +1,4 @@
+# quickDevForAndroid
+一个快速的安卓开发框架
+通过长连接实现消息推送
+在使用上拉加载框架BaseRecyclerViewAdapterHelper出现了BUG,等待修复
